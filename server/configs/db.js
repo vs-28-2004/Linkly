@@ -5,7 +5,7 @@ import mongoose from "mongoose";
  * carry a query string (?retryWrites=true...) because the database name is passed
  * as an option instead of being glued onto the URL.
  *
- * Data created before the rebrand lives in the "pingup" database, so that stays the
+ * Data created before the rebrand lives in the "Linkly" database, so that stays the
  * default. Set MONGODB_DB_NAME if you want a different one.
  */
 const connectDB = async () => {

@@ -9,7 +9,7 @@ See [`.env.example`](.env.example) for the full list.
 | Variable | Notes |
 | --- | --- |
 | `MONGODB_URL` | Plain or Atlas URI. Don't append a database name. |
-| `MONGODB_DB_NAME` | Optional, defaults to `pingup` (the name used before the rebrand). |
+| `MONGODB_DB_NAME` | Optional, defaults to `Linkly` (the name used before the rebrand). |
 | `PORT` | Defaults to `4000`. |
 | `CLIENT_URL` | Optional, comma-separated allowed front-end origins. Empty allows any origin. |
 | `CLERK_PUBLISHABLE_KEY`, `CLERK_SECRET_KEY` | Required. |

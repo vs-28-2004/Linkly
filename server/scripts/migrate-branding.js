@@ -7,7 +7,7 @@ import User from "../models/User.js";
 await mongoose.connect(process.env.MONGODB_URL, { dbName: process.env.MONGODB_DB_NAME || "pingup" });
 
 const result = await User.updateMany(
-    { bio: "Hey there! I am using PingUp." },
+    { bio: "Hey there! I am using Linkly." },
     { $set: { bio: "Hey there! I am using Linkly." } }
 );
 
