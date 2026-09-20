@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+@import "tailwindcss";
+
+/*
+  Linkly look & feel lives here. Change these tokens and the whole app follows:
+    --font-sans        the typeface
+    --color-brand-*    primary colour (buttons, links, highlights)
+    --color-accent-*   second colour of the gradient
+    --color-canvas     page background
+    --color-ink        main text colour
+*/
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --color-brand-50: #fff4ed;
+  --color-brand-100: #ffe5d3;
+  --color-brand-200: #ffc8a6;
+  --color-brand-300: #ffa26f;
+  --color-brand-400: #fd7a3a;
+  --color-brand-500: #f45a14;
+  --color-brand-600: #cf3f09;
+  --color-brand-700: #a83009;
+  --color-brand-800: #872a0f;
+
+  --color-accent-50: #fff0f7;
+  --color-accent-100: #ffe0ee;
+  --color-accent-200: #ffc2dd;
+  --color-accent-300: #ff93c2;
+  --color-accent-400: #f95a9f;
+  --color-accent-500: #e93382;
+  --color-accent-600: #be1f6b;
+  --color-accent-700: #9c1858;
+
+  --color-canvas: #fbf7f3;
+  --color-ink: #241c17;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-canvas);
+    color: var(--color-ink);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Hide scrollbars but keep scrolling */
+@utility no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Story progress bar: fills over the story's duration */
+@keyframes story-progress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
